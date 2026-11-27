@@ -27,7 +27,7 @@ public class Personne {
         ResultSet rs = stmt.executeQuery(rq);
         Personne p;
         if (rs.next()){
-            p = new Personne(rs.getString("nom"),rs.getString("prenom")));
+            p = new Personne(rs.getString("nom"),rs.getString("prenom"));
             p.setId(rs.getInt("id"));
             personne.add(p);
         }
